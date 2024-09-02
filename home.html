@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Quicksand:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Inspiration&family=Inter:wght@200&family=Montserrat:wght@300;400&family=Mulish:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+       
+       <style>
+        
+        @font-face {
+            font-family: myfont;
+            src: url('Humphrey Patterson.ttf');
+        }
+        @font-face {
+            font-family: myfont2;
+            src: url('Spartan.ttf');
+        }
+        body{
+            background-color: white;
+            height: 1900px;
+            max-width: 100%;
+            overflow-x: hidden;
+           
+        }
+        .title{
+            font-family: myfont;
+            letter-spacing: 6px;
+            font-size: 38px;
+            font-weight: 100;
+            color: white;
+            position: relative;
+            right: 180px;
+            top: 16px;
+        }
+        .title1{
+            font-family: myfont;
+            letter-spacing: 6px;
+            font-size: 30px;
+            font-weight: 100;
+            color: white;
+            position: relative;
+            left: -400px;
+            bottom: 200px;
+            
+        }
+        #collection{
+            margin-left: 110px;
+        }
+        #collection1{
+            position: relative;
+            right: 0px;
+            left: 260px;
+            bottom: 200px;
+            width: 700px;
+        }
+        .star{
+            height: 10px;
+            position: relative;
+            bottom: 15px;
+            
+            float: left;
+            
+        }
+        #header{
+            height: 70px;
+            background-color: black;
+            letter-spacing: 1px;
+            font-size: x-small;
+            font-weight: 50;
+            position: relative;
+            bottom: 17px;
+            right: 8px;
+            width: 101.05%;
+            color: rgb(220, 216, 216);
+
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        .call{
+            margin-left: 10%;
+            padding-top: 1%;
+            padding-left: 4%;
+            float: left ;
+        }
+        #side{
+            width: 150px;
+            float: right;
+            margin-right: 15%;
+            margin-top: 1%;
+
+        }
+        .bor{
+            border-right: 1px solid #A0A0A0;
+            padding-right: 15px;
+            padding-left: 15px;
+            float: left;
+            
+        }
+        .borlast{
+            
+            padding-right: 10px;
+            padding-left: 15px;
+            float: left;
+            
+        }
+        #bod{
+            background-image: url('main.jpg');
+            background-position: 1650px 750px;
+            background-size: 1650px;
+            background-blend-mode:normal;
+            height: 570px;
+            width: 101.01%;
+            margin-top: -47.6px;
+            position: relative;
+            bottom: 1px;
+            margin-left: -7px;
+            transition: top 0.7s;
+            
+        }
+        .back{
+            height: 550px;
+            width: 1517px;
+            opacity: 0.9 ;
+            float: left;
+        }
+        #headtitle{
+            margin-left: 11%;
+            position: relative;
+            padding-bottom: 50%;
+            
+        }
+        .hov{
+            text-decoration: none;
+            color: rgb(220, 216, 216);
+            transition: 0.7s;
+            cursor: pointer;
+
+        }
+        .hov:hover{
+            color: green;
+        }
+        .maintext{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-weight:500;
+            margin-left: 190px;
+            position: relative;
+            bottom: 830px;
+            left:230px;
+            font-size:60px;
+          
+        }
+
+        @media screen {
+            
+        }
+        span{
+            
+            margin-left: 40px;
+        }
+        #insideright{
+            float: right;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            letter-spacing: 3px;
+            font-size:xX-small;
+            font-weight:bolder;
+            margin-right: 17%;
+            position: relative;
+            bottom: 60px;
+            
+            
+
+        }
+        .insider{
+            float: left;
+            padding-right: 30px;
+
+        }
+        .but{
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 2px;
+            background-color: #6DC235;
+            border: none;
+            color: white;
+            font-weight: 1000;
+            height: 30px;
+            font-size: x-small;
+            width: 100px;
+            margin-top: 3px;
+        }
+        .but:hover{
+            background-color: #323232;
+            transition: 0.7s;
+            cursor: pointer;
+            
+        }
+        .drop{
+            font-family: 'Quicksand', sans-serif;
+            
+            font-size: xx-small;
+            font-weight:lighter;
+            background-color: #111111;
+            height: 120px;
+            width: 200px;
+            margin-left: 10px;
+            position: relative;
+            bottom: 1080px;
+            left: 650px;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            opacity: 0.01;
+            
+            
+            
+            
+        }
+        #footer{
+            background-color: #111111;
+            height: 80px;
+            width: 100%;
+            
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+            font-size: large;
+            font-weight:500;
+            margin-left: -10px;
+            padding-left: 42%;
+            margin-top: -20px;
+            padding-top: 30px;
+        }
+        .fon{
+            font-weight:100;
+        }
+        
+       
+        
+        .textbelow{
+            padding-bottom: 10px;
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            
+            font-size: small;
+            font-weight:500;
+        }
+        .drop a{
+            text-decoration: none;
+            color: white;
+        }
+        .but2{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    background-color: #323232;
+    border: none;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    font-size: small;
+    width: 200px;
+    margin-top: 2px;
+    position: relative;
+    bottom: 680px;
+    left: 430px;
+    margin-left: 50px;
+
+}
+.but3{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    font-size: small;
+    width: 110px;
+    margin-top: 2px;
+    position: relative;
+    bottom: 95px;
+    right: 310px;
+    margin-left: 50px;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 10px;
+
+}
+.but4{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    font-size: X-small;
+    width: 110px;
+    margin-top: 2px;
+    position: relative;
+    bottom: 335px;
+    right: 60px;
+    float: left;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 10px;
+
+}
+.but4:hover{
+           
+           background-color: #6DC235;
+           transition: 0.7s;
+           cursor: pointer;
+           
+       }
+.but2:hover{
+           
+            background-color: #6DC235;
+            transition: 0.7s;
+            cursor: pointer;
+            
+        }
+        .but1{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    background-color: #6DC235;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 40px;
+    font-size: small;
+    width: 140px;
+    margin-top: 2px;
+    position: relative;
+    bottom: 1px;
+    margin-left: 20px;
+
+}
+.but1:hover{
+            background-color: #323232;
+            transition: 0.7s;
+            cursor: pointer;
+            
+        }
+#smallbox{
+    font-family: 'Quicksand', sans-serif;
+    
+    font-size: x-small;
+    font-weight:500;
+    background-color: #111111;
+    position: relative;
+    color: white;
+    bottom: 950px;
+    height: 70px;
+    width: 1120px;
+    left: 220px;
+    opacity: 0.95;
+    letter-spacing: 2px;
+}
+.smallbox1{
+    background-color: #111111;
+    font-family: 'Quicksand', sans-serif;
+    width: 170px;
+    
+    margin-left: 20px;
+    position: relative;
+    top: 13px;
+    height: 30px;
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    border: 0.01px solid #535252;
+    float: left;
+    color: white;
+
+}
+.smallbox1:hover{
+    border: 0.5px solid white;
+}
+.font{
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 5px;
+    padding-right: 7px;
+}
+.drop1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+    font-weight:800;
+    letter-spacing: 2px;
+    padding-left: 40px;
+    width: 200px;
+    height: 40px;
+    margin-top: 13px;
+    margin-left: 20px;
+    background-color: #111111;
+    color: white;
+    cursor: pointer;
+
+}
+.drop1:hover{
+    border: 0.5px solid white;
+}
+.drop1 option{
+    padding: 2px;
+}
+option:hover{
+    background-color:gray;
+}
+.siz1{
+    height: 400px;
+    width: 400px;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+.siz2{
+    height: 400px;
+    margin-left: 10%;
+    position: relative;
+    left: 530px;
+    bottom: 300px;
+    
+}
+.siz3{
+    height: 400px;
+    float: right;
+    position: relative;
+    bottom: 500px;
+    right: 250px;
+    width: 470px;
+}
+.fon2{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 400;
+    font-size: 50px;
+    position: relative;
+    color:#363636;
+    bottom: 700px;
+    left: 300px;
+}
+.fon4{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 400;
+    font-size: 45px;
+    position: relative;
+    color:#363636;
+    bottom: 700px;
+    left: 300px;
+}
+.fon5{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    color:#2F2F2F;
+    bottom: 550px;
+    left: 230px;
+    float: left;
+}
+.fon9{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    color:#2F2F2F;
+    bottom: 550px;
+    left: 170px;
+    float: left;
+}
+.fon8{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    color:#2F2F2F;
+    bottom: 550px;
+    left: 160px;
+    float: left;
+}
+
+.fon3{
+    font-family: 'Quicksand', sans-serif;
+    color:#ACACAC;
+    font-size: 16px;
+    font-weight: 500;
+
+    position: relative;
+    bottom: 700px;
+    left: 310px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+.hotel{
+    font-family: 'Quicksand', sans-serif;
+    color: #ACACAC;
+    position: relative;
+    bottom: 700px;
+    left: 430px;
+    letter-spacing: 4px;
+    font-size: small;
+    font-weight: 600;
+}
+.hotel1{
+    font-family: 'Quicksand', sans-serif;
+    color: #838383;
+    position: relative;
+    bottom: 100px;
+    left: 690px;
+    letter-spacing: 4px;
+    font-size: medium;
+    font-weight: 100;
+}
+::selection{
+    background-color: #6DC235;
+    color: white;
+}
+.second{
+    position: relative;
+    right: 36px;
+    text-align: center;
+    
+    
+}
+.third{
+    position: relative;
+    right: 43px;
+}
+    
+#swim{
+    height: 400px;
+    width: 770px;
+    position: relative;
+    bottom: 350px;
+    right: 10px;
+
+}
+.private{
+    background-color: #111111;
+    color: #C1C1C1;
+    font-size: small;
+    transform: rotate(90deg);
+    width: 180px;
+    height: 30px;
+    position: relative;
+    bottom: 500px;
+    right: 80px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    
+    
+    
+}
+.bed{
+    height: 400px;
+    width: 775px;
+    position: relative;
+    bottom: 723px;
+    float: right;
+    left: 30px;
+    
+}
+.gallery{
+    height: 200px;
+    background-color: #181818;
+    position: relative;
+    bottom: 875px;
+    right: 10px;
+    width: 1530px;
+    float: left;
+}
+.small{
+    height: 140px;
+    padding: 29px;
+    width: 340px;
+}
+.gal{
+    transition: 0.5s;
+}
+.gal:hover{
+    transform: rotate(5deg);
+    transition: 0.5s;
+   
+}
+.fo10{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;
+    position: relative;
+    left: 40px;
+    bottom: 30px;
+}
+.para{
+    font-family: 'Quicksand', sans-serif;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+    bottom: 40px;
+    left: 155px;
+    line-height: 22px;
+}
+.fon6{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    color:#2F2F2F;
+    bottom: 610px;
+    
+    right: 350px;
+}
+.fon7{
+    line-height: 60px;
+    font-family: myfont2;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    color:#2F2F2F;
+    bottom: 640px;
+    
+    right: -240px;
+}
+.para1{
+    font-family: 'Quicksand', sans-serif;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+    bottom: 500px;
+    left: -15px;
+    line-height: 22px;
+}
+.fixfont{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    height: 100px; 
+    width: 160px; 
+    background-color: #1F1F1E;
+    position: relative;
+    font-size: x-small;
+    letter-spacing: 1px;
+    bottom: 490px;
+    opacity: 0.9;
+    left: 400px;
+    padding-left: 20px;
+    padding-top: 50px;
+    float: left;
+}
+.fixfont1{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    height: 100px; 
+    width: 160px; 
+    background-color: black;
+    position: relative;
+    font-size: x-small;
+    letter-spacing: 1px;
+    bottom: 490px;
+    opacity: 0.9;
+    left: 400px;
+    padding-left: 20px;
+    padding-top: 50px;
+    float: left;
+    transition: 0.2s;
+}
+.chill{
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    position: relative;
+     bottom: 350px;
+     left: 440px;
+
+     color: rgb(248, 248, 248);
+     letter-spacing: 0.5px;
+}
+.fixfont1:hover{
+    background-color: #6DC235;
+    transition: 0.3S;
+}
+.fixfont:hover{
+    border: 4px solid gray;
+    transition: 0.2s;
+}
+.hotel3{
+    font-family: 'Quicksand', sans-serif;
+    color: #ACACAC;
+    position: relative;
+    bottom: 700px;
+    left:0px;
+    letter-spacing: 4px;
+    font-size: medium;
+    font-weight: 300;
+}
+.foot{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #181818;
+    color: white;
+   height: 90px;
+}
+
+.rooms{
+    margin-left: 180px;
+    position: relative;
+    bottom: 200px;
+    float: left;
+    height: 700px;
+    margin-top: 10px;
+    box-shadow: -0px 10px #F6F6F6;
+    width: 560px;
+}
+.rooms1{
+    margin-left: 180px;
+    position: relative;
+    bottom: 200px;
+    float: left;
+    height: 700px;
+    margin-top: 10px;
+    right:100px;
+    box-shadow: -0px 10px #F6F6F6;
+    width: 560px;
+}
+.ali{
+    position: relative;
+    bottom: 30px;
+    line-height: 30px;
+}
+.bla{
+    background-color: #212121;
+    position: relative;
+    bottom: 195px;
+    right: 20px;
+    width: 1530px;
+    height: 240px;
+   
+}
+.beforefoot{
+    background-color: #111111;
+    height: 500px;
+    position: relative;
+    top: 200px;
+    right: 10px;
+    width: 102%;
+}
+.inp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-left: 40px;
+    color: white;
+    background-color: #212121;
+    border: none;
+
+    
+}
+::placeholder{
+    color: #D5D5D5;
+}
+.subscribe{
+    transition: 0.5s;
+    cursor: pointer;
+    color: white; height: 102px; background-color: black; width: 130px;position: relative; bottom: 48px; font-family: 'Quicksand', sans-serif;
+   
+}
+.subscribe:hover{
+    background-color: #6DC235;
+    color: white;
+    transition: 0.5s;
+}
+.hovimage{
+    transition: 0.7s;
+    height: 140px; width: 260px; float: left; position: relative; right: 606px; bottom: 219px;
+    cursor: pointer;
+}
+.hovimage:hover{
+    opacity: 0.2;
+    
+    
+}
+.secondline{
+    width: 50px; float: left; position: relative; margin-right: 10px; bottom: 320px; left:655px; border: 0.000001em solid #6DC235;
+    cursor: pointer;
+}
+     
+        
+    </style>
+</head>
+
+<body>
+    
+  <script>
+    function cli(){
+        
+        document.getElementById('chil').innerHTML="\"Every good day starts off with a cappuccino, and there's no place better to <br> enjoy some frothy caffeine than at the Thalia Hotel\"";
+        document.getElementById('nam').innerHTML="TERRY MITCHELL"
+    }
+    function cli1(){
+        
+        document.getElementById('chil').innerHTML="\"Chilling out on the bed in your hotel room watching television, while wearing<br>your own pajamas, is sometimes the best of a vacation\"";
+        document.getElementById('nam').innerHTML="JASON SALVATORE"
+    }
+    function cli2(){
+        
+        document.getElementById('chil').innerHTML="\"Every good day starts off with a cappuccino, and there's no place better to <br> enjoy some frothy caffeine than at the Thalia Hotel\"";
+        document.getElementById('nam').innerHTML="TERRY MITCHELL"
+    }
+  </script>
+      
+      
+    <div id="header">
+        <h3 class="call">CALL US: <a class="hov" href="#">(381) 60 422 4256</a></h3>
+        <div id="side">
+            <h3 class="bor"><a class="hov">FB</a></h3>
+            <h3 class="bor"><a class="hov">TW</a></h3>
+            <h3 class="borlast"><a class="hov">ENG</a></h3>
+        </div>
+    </div>
+ 
+    <div id="bod">
+       
+    <div id="headtitle">
+    <h1 class="title">Thalia</h1>
+    <div id="collection">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+</div>
+<script>
+   
+
+    $(document).ready(function(){
+      $(".hov1").hover(function(){
+        $(".drop").css("opacity",1).fadeIn();
+       
+        
+        }, function(){
+            $(".drop").hover(function(){
+
+            }, function(){
+                $(".drop").css("opacity",0.01)
+            });
+            
+          
+            
+          
+      });
+      
+    });
+    </script>
+<div id="insideright">
+    <h2  class="insider hov hov1">HOME</h2>
+    
+    <h2 class="insider hov">ROOMS</h2>
+    <h2 class="insider hov">PAGES</h2>
+    <h2 class="insider hov">ABOUT US</h2>
+    <h2 class="insider hov">NEWS</h2>
+    <h2 class="insider hov">CONTACT</h2>
+    <button class="but">BOOK NOW</button>
+   
+
+</div>
+</div>
+    <h1 class="maintext"><br>Discover your paradise <br> <span>under the Greek sky</span></h1>
+    <div class="drop">
+        <h3 class="textbelow"><a class="hov" href="#">Flip Slider</a></h3>
+        <h3 class="textbelow"><a class="hov" href="#">Video Background</a></h3>
+        <h3 class="textbelow"><a class="hov" href="#">Moving Image</a></h3>
+        
+    </div>
+
+    <div id="smallbox">
+        <div class="smallbox1">
+            <h3>CHECK-IN DATE</h3>
+        </div>
+        <div class="smallbox1">
+            <h3>CHECK-OUT DATE</h3>
+        </div>
+        <select class="drop1">
+            <option>ADULTS</option>
+            <option>ADULTS</option>
+            <option>ADULTS</option>
+        </select>
+        <select class="drop1">
+            <option>CHILDREN</option>
+            <option>CHILDREN</option>
+            <option>CHILDREN</option>
+            
+        </select>
+        <button class="but1">BOOK NOW</button>
+    </div>
+
+
+</div>
+<div id="footer">
+    <h3 class="fon">discover your paradise</h3>
+</div>
+<div>
+    <img class="siz1" src="pic3.jpg">
+    <img class="siz2" src="pic1.jpg">
+    <div>
+    <img class="siz3" src="pic2.jpg">
+</div>
+</div>
+<div>
+    <h3 class="hotel">HOTEL THALIA</h3>
+    <h1 class="fon2">Here is a tribute<br><span>to good life!</span></h1>
+    <div style="position: relative; right: 60px;">
+    <h3 class="fon3">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br><span class="second">blanditiis praesentium voluptatum deleniti atque corrupti quos</span><br><span class="third">dolores et quas molestias excepturi sint occaecati cupiditate non</span><br><span style="margin-left: 180px;">provident</span></h3>
+</div>
+</div>
+<div id="slid">
+    <img id='swim' src="privatepool.jpg">
+    <div class="private">
+    <h3 class="font">PRIVATE POOL SUITE</h3>
+    
+</div>
+<h3 class="fon4" style="position: relative; left: 920px; bottom: 770px;">Private Pool Suite</h3>
+<div style="margin-left: 550px; position: relative; bottom: 100px; right: 20px;">
+<h3 class="fon3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br><span class="second">doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</span><br><span style="margin-left: 180px;">inventore veritatis et.</span></h3>
+<button class="but2">CHECK AVAILABILITY</button>
+</div>
+</div>
+<div>
+    <img class="bed" src="bedroom.jpg">
+    <h3 class="font" style="transform: rotate(90deg); float: right; position: relative; bottom: 450px; left: 130px;background-color: #111111; color: #C1C1C1; font-size: small; letter-spacing: 1px; width: 120px; padding-left: 20px; padding-bottom: 5px;">SEA VIEW SUITE</h3>
+    <h3 class="fon4" style="position: relative; left: 180px; bottom: 630px; font-size: 40px; letter-spacing: normal;">Sea View Suite</h3>
+    <div style="margin-left: 550px; float: left; position: relative; right: 800px; bottom: 250px;">
+        <h3 class="fon3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br><span class="second">doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</span><br><span style="margin-left: 180px;">inventore veritatis et.</span></h3>
+        <button class="but2">CHECK AVAILABILITY</button>
+        </div>
+
+</div>
+<div class="gallery">
+    <div  style="float: left; margin-right: -190px; cursor: pointer;">
+    <img class="small gal" src="first.jpg">
+    <button class="but3">SPA SALON</button>
+</div>
+<div style="float: left; margin-right: -190px; cursor: pointer;">
+    <img class="small gal" src="second.jpg">
+    <button class="but3">SPA SALON</button>
+</div>
+<div style="float: left; margin-right: -190px; cursor: pointer;">
+    <img class="small gal" src="third.jpg">
+    <button class="but3">SPA SALON</button>
+</div>
+<div style="float: left; margin-right: -150px; cursor: pointer;">
+    <img class="small gal" src="fourth.jpg">
+    <button class="but3">SPA SALON</button>
+</div>
+</div>
+<h3 class="hotel1">ELEGANT SUITES</h3>
+<hr style="width: 50px; position: relative; bottom: 100px; left: 400px; border: 0.000001em solid #6DC235;">
+<h3 class="fon4" style="position: relative; left: 570px; bottom: 130px; font-size: 40px; letter-spacing: normal;">Unpretentious Luxury</h3>
+<div style="position: relative; left: 100px;">
+<img src="smoke.png" style="position: relative; bottom: 100px; left: 240px;">
+<div class="instruct" style="position: relative; right: 40px;">
+<h4 class="fon5" >Smoking Free</h4>
+<h3 class="para">Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 60px;">totam rem aperiam, eaque ipsa quae ab illo inventore</span><br><span style="float: left; position: relative; right: 110px; bottom: 350px;">veritatis et.</span></h3>
+<button class="but4" style="position: relative;left: -42px; ">READ MORE</button>
+</div>
+<div class="instruct" style="float: left; width: 538px; position: relative; left: 0px;">
+    <img src="sofa.png" style="position: relative; bottom: 570px; left: 110px;">
+    <h4 class="fon5" >King Beds</h4>
+    <div style="position: relative; bottom: 465px; right: 180px;">
+    <h3 class="para" >Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 60px;">totam rem aperiam, eaque ipsa quae ab illo inventore</span><br><span style="float: left; position: relative; right: -80px; ">veritatis et.</span></h3>
+</div>
+    <button class="but4" style="position: relative; bottom: 468px; left: -21px;">READ MORE</button>
+    </div>
+    <div style="float: right; width: 150px; bottom: 400px; left: -500px;">
+        <img src="boat.png" style="position: relative; bottom: 570px; left: -300px;">
+        <div style="width: 200px;">
+            <h4 class="fon6">Yatcht Rental</h4>
+            <div style="position: relative; bottom: 580px; right: 580px; width: 500px;">
+                <h3 class="para" >Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 60px;">totam rem aperiam, eaque ipsa quae ab illo inventore</span><br><span style="float: left; position: relative; right: -80px; ">veritatis et.</span></h3>
+            </div>
+            <button class="but4" style="position: relative; bottom: 588px; right: 320px; ">READ MORE</button>
+        </div>
+        
+        </div>
+       
+<div class="instruct" style="position: relative;  float: left; top: 400px; right: 1000px;">
+    <img src="drink.png" style="position: relative; bottom: 600px; left:300px; ">
+    <h4 class="fon7" >Welcome Drink</h4>
+    <div style="position: relative; bottom: 610px; left: 20px;">
+        <h3 class="para" >Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 60px;">totam rem aperiam, eaque ipsa quae ab illo inventore</span><br><span style="float: left; position: relative; right: -80px; ">veritatis et.</span></h3>
+    </div>
+    <button class="but4" style="position: relative; bottom: 608px; right: -160px; ">READ MORE</button>
+
+</div>
+<div class="instruct" style="float: left; width: 538px; position: relative; left: 410px; top: 90px;">
+    <img src="swimm.png" style="position: relative; bottom: 580px; left: 30px;">
+    <h4 class="fon9" >Swimming Pool</h4>
+    <div style="position: relative; bottom: 475px; right: 260px; width: 550px;">
+    <h3 class="para" >Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 30px;">totam rem aperiam, eaque ipsa quae ab illo </span><br><span style="float: left; position: relative; right: -290px; ">veritatis et.</span></h3>
+</div>
+<button class="but4" style="position: relative; bottom: 468px; left: 108px;">READ MORE</button>
+</div>
+<div class="instruct" style="float: left; width: 558px; position: relative; left: 310px; top: 85px;">
+    <img src="spoon.png" style="position: relative; bottom: 580px; left: 30px;">
+    <h4 class="fon8" >Food Included</h4>
+    <div style="position: relative; bottom: 479px; right: 250px;">
+    <h3 class="para" >Sed ut perspiciatis unde omnis iste natus error sit,<br><span style="position: relative; right: 60px;">totam rem aperiam, eaque ipsa quae ab illo inv</span><br><span style="float: left; position: relative; right: -280px; ">veritatis et.</span></h3>
+</div>
+<button class="but4" style="position: relative; bottom: 468px; left: 81px;">READ MORE</button>
+</div>
+
+   <script>
+    function inc(){
+        let val = parseInt(document.getElementById("num").innerHTML);
+        val++;
+        document.getElementById("num").innerHTML=val;
+    }
+    function dec(){
+        let val = parseInt(document.getElementById("num").innerHTML);
+        val--;
+        document.getElementById("num").innerHTML=val;
+    }
+    
+   </script>
+    </div>
+    <img style="height: 400px; width: 1530px; position: relative; right: 20px; bottom: 230px; filter:brightness(80%); opacity: 0.96;" src="resortpool.jpg">
+    <div  CLASS="fixfont">
+        <h1 style="margin-left: 20px; position: relative; bottom: 8px;">CHECK-IN</h1>
+
+    </div>
+    <div  CLASS="fixfont">
+        <h1 style="margin-left: 20px; position: relative; bottom: 8px;">CHECK-IN</h1>
+
+    </div>
+    <div  CLASS="fixfont">
+        <div id="inc" style="position: relative; left: 130px; bottom: 45px; cursor: pointer;" onclick="inc();">
+            <h1>^</h1>
+        </div>
+        <h1 id="num" style="margin-left: 60px; position: relative; bottom: 88px; font-size: 50px;">1</h1>
+        <div id="dec" style="transform:rotate(180deg); position: relative; bottom: 120px; right: 20px; cursor: pointer;" onclick="dec();">
+            <h1>^</h1>
+        </div>
+    </div>
+    <div  CLASS="fixfont1">
+        <h1 style="margin-left: 60px; position: relative; bottom: 8px; right: 40px; font-size: small; text-align: center;">CHECK AVAILABILITY</h1>
+
+    </div>
+    <h3 class="hotel3" style="position: relative; top: -190px;" >LUXURY</h3>
+    <hr style="width: 50px; position: relative; bottom: 190px; left: -350px; border: 0.000001em solid #6DC235;">
+    <h3 class="fon4" style="position: relative; left: -80px; bottom: 220px; font-size: 40px; letter-spacing: normal;">Our Rooms</h3>
+
+    <div class="rooms">
+        <img src="poolsuite.png" style="height: 380px;">
+        <h3 class="fon4" style="position: relative; left: 40px; font-weight: 500; bottom: 10px; font-size: 24px; letter-spacing: normal;">Pool Suite</h3>
+       <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab<br>illo inventore veritatis et.</h3>
+       <button class="but4" style="position: relative; bottom: 8px; right: -40px; width: 150PX; font-size: small; font-weight: 300; color: white; ">BOOK FROM 130$</button>
+        <hr style="position: relative; top: 60px;border:0.000001rem solid #F6F6F6; right: 10px; width: 500px;">
+        <div style="position: relative; top: 70px; right:-30px; ">
+        <img src="swimm.png" style="height: 30px;">
+        <img src="sofa.png"style="height: 30px;">
+        <img src="boat.png"style="height: 30px;">
+        <img src="smoke.png"style="height: 30px;">
+        <h3 class="hotel3 hov" style="position: relative; top: -48px; LEFT: 430PX;font-size: medium;">FULL INFO</h3>
+    </div>
+    </div>
+    <div class="rooms1">
+        <img src="smallroom.png" style="height: 380px;">
+        <h3 class="fon4" style="position: relative; left: 40px; font-weight: 500; bottom: 10px; font-size: 24px; letter-spacing: normal;">Small Room</h3>
+       <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab<br>illo inventore veritatis et.</h3>
+       <button class="but4" style="position: relative; bottom: 8px; right: -40px; width: 150PX; font-size: small; font-weight: 300; color: white; ">BOOK FROM 130$</button>
+        <hr style="position: relative; top: 60px;border:0.000001rem solid #F6F6F6; right: 10px; width: 500px;">
+        <div style="position: relative; top: 70px; right:-30px; ">
+        <img src="swimm.png" style="height: 30px;">
+        <img src="sofa.png"style="height: 30px;">
+        <img src="boat.png"style="height: 30px;">
+        <img src="smoke.png"style="height: 30px;">
+        <h3 class="hotel3 hov" style="position: relative; top: -48px; LEFT: 430PX;font-size: medium;">FULL INFO</h3>
+    </div>
+    </div>
+    <div class="rooms">
+        <img src="Apartment.png" style="height: 380px;">
+        <h3 class="fon4" style="position: relative; left: 40px; font-weight: 500; bottom: 10px; font-size: 24px; letter-spacing: normal;">Apartment</h3>
+       <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab<br>illo inventore veritatis et.</h3>
+       <button class="but4" style="position: relative; bottom: 8px; right: -40px; width: 150PX; font-size: small; font-weight: 300; color: white; ">BOOK FROM 130$</button>
+        <hr style="position: relative; top: 60px;border:0.000001rem solid #F6F6F6; right: 10px; width: 500px;">
+        <div style="position: relative; top: 70px; right:-30px; ">
+        <img src="swimm.png" style="height: 30px;">
+        <img src="sofa.png"style="height: 30px;">
+        <img src="boat.png"style="height: 30px;">
+        <img src="smoke.png"style="height: 30px;">
+        <h3 class="hotel3 hov" style="position: relative; top: -48px; LEFT: 430PX;font-size: medium;">FULL INFO</h3>
+    </div>
+    </div>
+    <div class="rooms1">
+        <img src="bigapartment.png" style="height: 380px;">
+        <h3 class="fon4" style="position: relative; left: 40px; font-weight: 500; bottom: 10px; font-size: 24px; letter-spacing: normal;">Big Apartment</h3>
+       <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab<br>illo inventore veritatis et.</h3>
+       <button class="but4" style="position: relative; bottom: 8px; right: -40px; width: 150PX; font-size: small; font-weight: 300; color: white; ">BOOK FROM 130$</button>
+        <hr style="position: relative; top: 60px;border:0.000001rem solid #F6F6F6; right: 10px; width: 500px;">
+        <div style="position: relative; top: 70px; right:-30px; ">
+        <img src="swimm.png" style="height: 30px;">
+        <img src="sofa.png"style="height: 30px;">
+        <img src="boat.png"style="height: 30px;">
+        <img src="smoke.png"style="height: 30px;">
+        <h3 class="hotel3 hov" style="position: relative; top: -48px; LEFT: 430PX;font-size: medium;">FULL INFO</h3>
+    </div>
+    </div>
+    <div class="ali">
+        <img style="height: 500px; width: 1530px; position: relative; right: 20px; filter: brightness(50%);" src="island.jpg" >
+        <h3 id="chil" class="chill">"Chilling out on the bed in your hotel room watching television, while wearing<br>your own pajamas, is sometimes the best of a vacation"</h3>
+        <h3 id="nam" class="hotel" style=" color: white; position: relative; bottom: 350px; left: 650px;">JASON SALVATORE</h3>
+        <hr class='secondline' onclick="cli1();" >
+        <hr class='secondline' onclick="cli();">
+        <hr class="secondline">
+               
+    </div>
+    <div class="bla">
+        <h3 class="fon4" style="color: white; position: relative; left: 400px; font-weight: 500; top: 50px; font-size: 24px; letter-spacing: normal;">A New Dimension Of Luxury</h3>
+        <h3 class="chill" style="color: white; position: relative; left: 660px; top: 30px; font-size: 15px; font-weight: 300;">our presentation, 0:48 min</h3>
+        
+    </div>
+    <div>
+        <img src="play1.png" style="height: 50px; position: relative; bottom: 280px; left: 710px; cursor: pointer;">
+    </div>
+    <h3 class="hotel3" style="position: relative; top: -190px; left: 600px;" >EXCELLENT RESTAURANT</h3>
+    <hr style="width: 50px; position: relative; bottom: 190px; left: -30px; border: 0.000001em solid #6DC235;">
+    <h3 class="fon4" style="position: relative; left: 600px; font-weight: 400; bottom: 190px; font-size: 38px; letter-spacing: normal;">Dining & Bars</h3>
+    <img src="dining.jpg" style="height: 360px; width: 570px; position: relative; left: 140px; bottom: 150px;">
+    <div>
+        <h3 class="fon4" style="position: relative; left: 880px; font-weight: 500; bottom: 450px; font-size: 24px; letter-spacing: normal;">Beach Restaurant</h3>
+        <div style="float: right; position: relative; bottom: 450px; right: 350px;">
+        <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque<br><center>ipsa quae abillo inventore veritatis et.</center></h3>
+        <button class="but4" style="position: relative; bottom: 8px; right: -160px; width: 120PX; font-size: small; font-weight: 300; color: white; ">EXPLORE</button>
+    </div>
+    <div style="position: relative; right: 150px;">
+        <h3 class="fon4" style="position: relative; left: 480px; font-weight: 500; bottom: 150px; font-size: 24px; letter-spacing: normal;">Pool Restaurant</h3>
+       
+         <div style="float: LEFT; position: relative; bottom: 150px; LEFT: 350px;">
+        <h3 class="fo10">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque<br><center>ipsa quae abillo inventore veritatis et.</center></h3>
+        <button class="but4" style="position: relative; bottom: 8px; right: -160px; width: 120PX; font-size: small; font-weight: 300; color: white; ">EXPLORE</button>
+        
+     
+    </div>
+    <img src="dining1.jpg" style="height: 360px; width: 570px; position: relative; left: 463px; bottom: 345px;">
+    <h3 class="hotel3" style="position: relative; top: -190px; left: 800px;" >GET IN TOUCH</h3>
+    <hr style="width: 50px; position: relative; bottom: 190px; left: 120px; border: 0.000001em solid #6DC235;">
+    <h3 class="fon4" style="position: relative; left: 730px; font-weight: 400; bottom: 210px; font-size: 39px; letter-spacing: normal;">Drop Us A Line</h3>
+    <div style="width: 700px; float: left; position: relative; right: 120px;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">Address:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >Avenue Str.328</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 490px; border: 0.000001em solid #e0d8d8;;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">City:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >Thessaloniki</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 480px; border: 0.000001em solid #e0d8d8;;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">Check-In:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >14:00pm</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 470px; border: 0.000001em solid #e0d8d8;;">
+</div>
+<div style="width: 700px; float: left; position: relative; right: 360px;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">Phone:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >Avenue Str.328</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 490px; border: 0.000001em solid #e0d8d8;;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">Email:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >Thessaloniki</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 480px; border: 0.000001em solid #e0d8d8;;">
+    <h4 style="position: relative; left: 600px; bottom: 200px; font-family: sans-serif; font-weight: 580;">Check-Out:</h4>
+    <h3 class="hotel3" style="position: relative; float: right;  left: 280px;  bottom: 257px;  letter-spacing: normal;" >14:00pm</h3>
+    <hr style="width: 390px; position: relative; bottom: 190px; left: 470px; border: 0.000001em solid #e0d8d8;;">
+</div>
+<h3 class="hotel3" style="position: relative; float: left;  font-style:italic; left: 800px;  bottom: 207px;  letter-spacing: normal;" >available at: 8am - 10pm</h3>
+<br>
+<h3 class="fon4" style="position: relative; float: left; font-weight: 400; top: -190px; left: 498px; font-size: 49px; letter-spacing: normal; color: #9B9B9B;">+21 60 374 7537</h3>
+    </div>
+    <div class="beforefoot">
+        <img class='hovimage' src="new`1.jpg">
+        <img src="new2.jpg" style="height: 140px; width: 260px;float: left; position: relative; right: 606px; bottom: 219px;">
+        <img src="new3.jpg" style="height: 140px; width: 260px;float: left; position: relative; right: 606px; bottom: 219px;">
+        <img src="new4.jpg" style="height: 140px; width: 260px;float: right; position: relative;  bottom: 359px; right: 470px">
+        <img src="new5.jpg" style="height: 140px; width: 260px;float: right; position: relative;  bottom: 359px; right: -40px">
+        <img src="new6.jpg" style="height: 140px; width: 220px;float: right; position: relative;  bottom: 359px;left: 520px;">
+        
+
+
+        <h1 class="title1" style=" float: left; right: 500px;">Thalia</h1>
+    <div id="collection1">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+    <img class="star" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solid_Bright_Green_Star_1.png">
+</div>
+<h3 class="hotel3" style="position: relative; float: left; left: 160px;  bottom: 187px;  letter-spacing: normal; color: white" >Avenue Street 3284<br></h3>
+
+<h3 class="hotel3" style="position: relative; float: left; left: 20px;  bottom: 157px;  letter-spacing: normal; color: white" >Thessaloniki</h3>
+<h3 class="hotel3" style="position: relative; top: -270px; left: 200px;font-weight: 600; color: white">INFORMATION</h3>
+<div style="position: relative; left: 40px; bottom: 70px;">
+   
+    <h3 class="hotel3" style="position: relative; float: left; left: 160px;  bottom: 187px;  letter-spacing: normal; color: white" >terms & conditions<br></h3>
+<div>
+<h3 class="hotel3" style="position: relative; float: left; left: 25px;  bottom: 157px;  letter-spacing: normal; color: white" >services</h3>
+<h3 class="hotel3" style="position: relative; float: left; left: -35px;  bottom: 127px;  letter-spacing: normal; color: white" >restaurant<br></h3>
+
+<h3 class="hotel3" style="position: relative; top: -80px; letter-spacing: normal; color: white; left: -110px;" >testimonials</h3>
+</div>
+</div>
+<h3 class="hotel3" style="position: relative; top: -340px; left: 350px;font-weight: 600; color: white">ABOUT US</h3>
+<div style="position: relative; left: 650px; bottom: 100px;">
+   
+    <h3 class="hotel3" style="position: relative; float: left; left: 250px;  bottom: 227px;  letter-spacing: normal; color: white" >At vero eos et accusamus et iusto odio dignissimos ducimus qui<br></h3>
+<div>
+<h3 class="hotel3" style="position: relative; float: left; left: -212px;  bottom: 197px;  letter-spacing: normal; color: white" >blanditiis praesentium voluptatum deleniti atque corrupti quos</h3>
+
+</div>
+<div style="position: relative; bottom: 460px; right: -360px;">
+    <input class="inp" type="text" placeholder="your email here" style="font-weight:100; float: left; position: relative; right: 600px; bottom: 100px; width: 600px; height: 100px;">
+    <div class="subscribe">
+        <H4 style="position: relative; bottom: 110px; left: 25px; font-weight: 100; letter-spacing: 1.4px; font-size: small;">SUBSCRIBE</H4>
+    </div>
+</div>
+</div>
+    </div>
+   
+</body>
+</html>
